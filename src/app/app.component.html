@@ -1,5 +1,5 @@
 <div class="app-container">
-  <div class="cards" *ngFor="let item of Items">
+  <div class="cards" *ngFor="let item of Items" (click)="isModalOpen = !isModalOpen;">
         <div class="image-container"><img src="{{item.imageSrc}}"/></div>
       <div class="card-container">
         <div class="dishNameRating-container">
@@ -28,6 +28,11 @@
         </div>
       </div>
   </div>
+</div>
+
+<div class="itemDetailPopup" *ngIf="isModalOpen">
+  <h1>Item Selected</h1>
+  <h3>Barbeque</h3><img height="250px" width="300px" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/restaurant%2F661930%2Frestaurant020191212091542.jpg" alt="">
 </div>
 <footer>
 

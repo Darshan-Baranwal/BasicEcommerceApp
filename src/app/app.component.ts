@@ -9,7 +9,7 @@ export class AppComponent implements OnInit{
   title = 'CareForOld';
   Items = [];
   private myWindow;
-
+  isModalOpen: boolean
   ngOnInit() {
     this.Items = [
       {
@@ -77,6 +77,7 @@ export class AppComponent implements OnInit{
         imageSrc: 'https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/restaurant%2F661930%2Frestaurant020191212091542.jpg'
       },
     ];
+    this.isModalOpen = false;
   }
 
   openItem() {
