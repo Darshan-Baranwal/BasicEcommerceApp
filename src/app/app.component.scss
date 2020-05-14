@@ -1,0 +1,64 @@
+.app-container {
+  background: aliceblue;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.cards {
+  width: 22%;
+  background: #FFF6F6;
+
+  height: auto;
+  padding: 4px;
+  margin: 4px;
+}
+.image-container {
+  position: relative;
+  img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+  }
+}
+.dishNameRating-container {
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dish-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-container {
+  border: 1px solid #BFBFBF;
+  border-top: 0px;
+  border-radius: 0 0 10px 10px;
+  padding: 8px;
+
+.food-voucher {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #4F4F4F;
+}
+  .offer-list {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #4F4F4F;
+  }
+}
+.love-it-buynow-container {
+margin-top: 8px;
+font-size: 12px;
+color: #4F4F4F;
+  display: flex;
+  justify-content: space-between;
+
+  .buy-now {
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,34 @@
+<div class="app-container">
+  <div class="cards" *ngFor="let item of Items">
+        <div class="image-container"><img src="{{item.imageSrc}}"/></div>
+      <div class="card-container">
+        <div class="dishNameRating-container">
+          <div class="dish-name-origin"><span class="dish-name">{{item.dishName}}</span>
+            <br>
+            <span class="origin">{{item.origin}}</span></div>
+          <div class="rating"><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>{{item.starrating}}</div>
+        </div>
+        <div class="food-voucher">
+          {{item.foodVoucher}}
+        </div>
+        <div class="offer-list">
+          {{item.offersList[0]}}
+        </div>
+        <div class="love-it-buynow-container">
+          <div class="love-it">
+            <i class="icon-heart-empty"></i>
+          </div>
+          <div class="buy-now">
+            <a href="{{item.imageSrc}}" target="_blank" class="btn" (click)="openItem()">Buy Now</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<footer>
+
+</footer>
